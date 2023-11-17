@@ -9,39 +9,12 @@ html,body
     padding: 0px;
     overflow-x: hidden;
 }
-/* ---------------
-
-and to make sure it will work on any IOS device as well I added this code in-
-
-Theme Functions (functions.php)
----------------
-function add_autoplay_fix_ios() {
- ? ＞
-  ＜ script type="text/javascript" ＞
-  var myvideos = document.querySelectorAll('.myvideo video');
-  if ( navigator.userAgent.match( /(iPod|iPhone|iPad)/ ) ) {
-   for (let index = 0; index ＜ myvideos.length; index++) {
-    myvideos[index].setAttribute('playsinline', '');
-   }
-  }
- ＜ /script ＞ 
- ＜ ?php
-}
-add_action( 'wp_footer', 'add_autoplay_fix_ios' );
----------------
- */
-
-
-
-
-
-
-
 /* code by webdevtrick ( https://webdevtrick.com ) */
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 body {
   background-color: #f6ede5;
+  background-image: url("../../assets/contact2.png");
 
 }
 
@@ -179,10 +152,10 @@ a, p {
 
 
 @keyframes tipsy {
-  0 {
+  0% { /* or 'from' */
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
   }
-  100% {
+  100% { /* or 'to' */
     transform: translateX(-50%) translateY(-50%) rotate(360deg);
   }
 }
