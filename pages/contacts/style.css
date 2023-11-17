@@ -9,7 +9,7 @@ html,body
     padding: 0px;
     overflow-x: hidden;
 }
----------------
+/* ---------------
 
 and to make sure it will work on any IOS device as well I added this code in-
 
@@ -29,7 +29,7 @@ function add_autoplay_fix_ios() {
 }
 add_action( 'wp_footer', 'add_autoplay_fix_ios' );
 ---------------
-
+ */
 
 
 

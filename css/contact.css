@@ -99,23 +99,125 @@ h1{
     
 }
 
+  a { text-decoration: none;
+   color:white;
+  }
 
-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translate(-50%, -50%);
+  .logo
+  {
+      height: 40px;
+      margin: 5px 10px;
+  	width: 100px;
+    color:black;
+  }
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.top-nav-bar
+{
+   height: 57px;
+    top: 0;
+    position: sticky;
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #F28DA8 ;
+    z-index: 2;
+}
+.logo
+{
+    height: 40px;
+    margin: 5px 10px;
+	width: 100px;
+}
+.form-control
+{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid #F28DA8 ;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+    border-top-right-radius: 0 ;
+    border-bottom-right-radius: 0 ;
+    box-shadow: none ;
+
+}
+.input-group-text
+{
+    background: #F28DA8 ;
+    border: 1px solid #F28DA8 ;
+    margin: 8.5px 10px 3px 0 ;
+    border-top-left-radius: 0px ;
+    border-bottom-left-radius: 0px ;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    cursor: pointer;
+}
+.search-box
+{
+    display: inline-flex;
+    width: 60%;
+}
+.fa-search
+{
+    color: #F28DA8;
+}
+.menu-bar
+{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    float: right;
+}
+.menu-bar ul li
+{
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: #F28DA8;
+    cursor: pointer;
+}
+.menu-bar ul li a
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
 }
 
-
-
-
-
+@media only screen and (max-width: 980px)
+{
+    .top-nav-bar
+    {
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box
+    {
+        width: 100%;
+    }
+    .menu-bar
+    {
+        width: 100%;
+    }
+    .menu-bar ul
+    {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .menu-bar ul li
+    {
+        height: 57px;
+        width: 100%;
+    }
+}
 
 
 
