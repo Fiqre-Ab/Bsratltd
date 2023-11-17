@@ -1,88 +1,118 @@
-/* Import Montserrat font from Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-body{
-    margin: 0PX;
-    padding: 0PX;
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+p{
+    font-size: 30px;
+
+}
+svg {
     display: block;
-}
-/* Global paragraph styles */
-p {
-    font-size: 18px; /* Adjusted font size for better readability on mobile */
-}
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 5 auto;
 
-
-#ab {
-    display: block;
-    text-align: center;
-    font: 2em 'Montserrat'; /* Adjusted font size for better responsiveness */
-    width: 100%; /* Make the SVG responsive */
-    height: auto; /* Make the SVG responsive */
-    margin: 0 auto; /* Center the SVG */
-    position: absolute; /* Use 'absolute' positioning */
-    top: 0; /* Position at the top */
-    left: 0; /* Align to the left, you can adjust as needed */
-    
 }
 
-
-/* Animation for text strokes in SVG */
 .text-copy {
     fill: none;
     stroke: white;
     stroke-dasharray: 6% 29%;
-    stroke-width: 2px; /* Adjusted stroke width for better visibility */
+    stroke-width: 5px;
     stroke-dashoffset: 0%;
     animation: stroke-offset 5.5s infinite linear;
 }
 
-/* Individual stroke colors and delays */
-.text-copy:nth-child(1) { stroke: #4D163D; animation-delay: -1s; }
-.text-copy:nth-child(2) { stroke: #840037; animation-delay: -2s; }
-.text-copy:nth-child(3) { stroke: #BD0034; animation-delay: -3s; }
-.text-copy:nth-child(4) { stroke: #BD0034; animation-delay: -4s; }
-.text-copy:nth-child(5) { stroke: #FDB731; animation-delay: -5s; }
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
 
-/* Additional styling for the second SVG */
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+
+
+
+
+
+
+
 #my {
     display: block;
-    font: 5em 'Montserrat'; /* Adjusted font size for better responsiveness */
-    width: 100%; /* Make the SVG responsive */
-    height: auto; /* Make the SVG responsive */
-    margin: 0 auto; /* Center the SVG */
+    font: 10.5em 'Montserrat';
+    width: 560px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 .text-copys {
     fill: none;
     stroke: white;
     stroke-dasharray: 6% 29%;
-    stroke-width: 3px; /* Adjusted stroke width for better visibility */
+    stroke-width: 7px;
     stroke-dashoffset: 0%;
     animation: stroke-offset 5.5s infinite linear;
 }
 
-/* Individual stroke colors and delays for the second SVG */
-.text-copys:nth-child(1) { stroke: #4D163D; animation-delay: -1s; }
-.text-copys:nth-child(2) { stroke: #840037; animation-delay: -2s; }
-.text-copys:nth-child(3) { stroke: #BD0034; animation-delay: -3s; }
-.text-copys:nth-child(4) { stroke: #BD0034; animation-delay: -4s; }
-.text-copys:nth-child(5) { stroke: #FDB731; animation-delay: -5s; }
-
-/* Keyframe animation for text stroke offset */
-@keyframes stroke-offset {
-    100% { stroke-dashoffset: -35%; }
+.text-copys:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
 }
 
-/* About section styles */
+.text-copys:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copys:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copys:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copys:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
 .about-section {
-    padding: 10px;
-    text-align: center;
-    background-color: #474e5d;
-    color: white;
+  padding: 10px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+
 }
 
-/* Keyframe animation for typing effect */
-@keyframes type {
-    0% { width: 0ch; }
-    100% { width: 22ch; }
+@keyframes type{
+	0%{
+		width:0ch;
+}
+100%{
+	width:22ch;
+}
 }
